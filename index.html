@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+<meta charset="UTF-8">
+<title>اترك رسالة</title>
+
+<style>
+body{
+  font-family: Arial;
+  background: linear-gradient(135deg,#ff9a9e,#fad0c4);
+  text-align:center;
+  padding:40px;
+}
+
+form{
+  background:white;
+  padding:20px;
+  border-radius:12px;
+  max-width:400px;
+  margin:auto;
+  box-shadow:0 0 15px rgba(0,0,0,0.15);
+}
+
+input, textarea{
+  width:90%;
+  padding:10px;
+  margin:8px 0;
+  border:1px solid #ccc;
+  border-radius:6px;
+  font-size:14px;
+}
+
+button{
+  background:#ff4e8a;
+  color:white;
+  padding:10px 20px;
+  border:none;
+  border-radius:6px;
+  font-size:16px;
+  cursor:pointer;
+}
+
+button:hover{
+  background:#e13b74;
+}
+</style>
+
+</head>
+<body>
+
+<h2>اترك رسالة</h2>
+
+<form action="https://formspree.io/f/mlgwnnzb" method="POST">
+
+<input type="text" name="name" placeholder="اكتب اسمك" required>
+
+<input type="email" name="email" placeholder="اكتب بريدك الإلكتروني" required>
+
+<textarea name="message" placeholder="اكتب رسالتك" required></textarea>
+
+<button type="submit">إرسال</button>
+
+</form>
+
+</body>
+</html>
